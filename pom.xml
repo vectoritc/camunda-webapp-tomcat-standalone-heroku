@@ -31,11 +31,13 @@
         </dependency>
     </dependencies>
     <repositories>
-        <repository>
-            <id>camunda-bpm-nexus</id>
-            <name>camunda-bpm-nexus</name>
-            <url>https://app.camunda.com/nexus/content/groups/public</url>
-        </repository>
+      <repository>
+        <id>camunda-bpm-nexus-ee</id>
+        <name>camunda-bpm-nexus</name>
+        <url>
+          https://app.camunda.com/nexus/content/repositories/camunda-bpm-ee
+        </url>
+      </repository>
     </repositories>
     <scm>
         <developerConnection>scm:git:git@github.com:plexiti/camunda-webapp-tomcat-standalone-heroku.git</developerConnection>
