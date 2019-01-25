@@ -4,7 +4,7 @@
     <artifactId>camunda-webapp-tomcat-standalone-heroku</artifactId>
     <packaging>war</packaging>
     <version>1.0.1-SNAPSHOT</version>
-    <name>camunda BPM Standalone Webapp for Heroku/Tomcat/Postgres</name>
+    <name>Camunda BPM Standalone Webapp for Heroku/Tomcat/Postgres</name>
     <url>https://github.com/plexiti/camunda-webapp-tomcat-standalone-heroku</url>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -73,7 +73,7 @@
                             <artifactItems>
                                 <artifactItem>
                                     <groupId>org.camunda.bpm.webapp</groupId>
-                                    <artifactId>camunda-webapp-tomcat-standalone</artifactId>
+                                    <artifactId>camunda-webapp-ee-tomcat-standalone</artifactId>
                                     <version>${camunda-bpm.version}</version>
                                     <type>war</type>
                                     <overWrite>true</overWrite>
@@ -155,6 +155,28 @@
             </activation>
             <properties>
                 <camunda-bpm.version>${env.CAMUNDA_BPM_VERSION}</camunda-bpm.version>
+            </properties>
+        </profile>
+        <profile>
+            <id>user</id>
+            <activation>
+                <property>
+                    <name>env.CAMUNDA_BPM_USER</name>
+                </property>
+            </activation>
+            <properties>
+                <camunda-bpm.user>${env.CAMUNDA_BPM_USER}</camunda-bpm.user>
+            </properties>
+        </profile>
+        <profile>
+            <id>pass</id>
+            <activation>
+                <property>
+                    <name>env.CAMUNDA_BPM_PASS</name>
+                </property>
+            </activation>
+            <properties>
+                <camunda-bpm.pass>${env.CAMUNDA_BPM_PASS}</camunda-bpm.pass>
             </properties>
         </profile>
     </profiles>

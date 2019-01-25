@@ -2,7 +2,7 @@
     "name": "Camunda BPM",
     "description": "Camunda BPM Standalone - ready for Heroku, Tomcat, Postgres",
     "repository": "https://github.com/plexiti/camunda-webapp-tomcat-standalone-heroku",
-    "logo": "https://camunda.com/img/camunda/icon.png",
+    "logo": "https://camunda.com/svg/camunda_icon.svg",
     "keywords": ["camunda", "heroku", "tomcat", "postgres"],
     "success_url": "/",
     "env": {
