@@ -10,6 +10,16 @@
             "description": "Your Camunda BPM version, e.g. 7.4.0, 7.5.0-alpha1, 7.1.0-Final, ...",
             "value": "7.4.0",
             "required": false
+        },
+        "CAMUNDA_BPM_PASS": {
+            "description": "Your Camunda BPM EE Password sended by email...",
+            "value": "YOUR PASSWORD",
+            "required": true
+        },
+        "CAMUNDA_BPM_USER": {
+            "description": "Your Camunda BPM EE Username sended by email...",
+            "value": "YOUR USERNAME",
+            "required": true
         }
     }
 }
