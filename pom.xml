@@ -12,6 +12,11 @@
     </properties>
     <dependencies>
         <dependency>
+          <groupId>org.camunda.bpm.springboot</groupId>
+          <artifactId>camunda-bpm-spring-boot-starter-rest</artifactId>
+          <version>${camunda-bpm.version}</version>
+        </dependency>
+        <dependency>
             <groupId>org.camunda.bpm.webapp</groupId>
             <artifactId>camunda-webapp-ee-tomcat-standalone</artifactId>
             <version>${camunda-bpm.version}</version>
